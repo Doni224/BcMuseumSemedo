@@ -4,5 +4,5 @@ Flask_MySQLdb
 keras
 nltk
 numpy
-tensorflow_gpu
+tensorflow
 Werkzeug
