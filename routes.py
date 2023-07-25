@@ -545,11 +545,11 @@ def root():
 
 
 
-model = load_model("chatbot\chatbot_model.h5")
-intents = json.loads(open("chatbot\intents.json").read())
+model = load_model("chatbot/chatbot_model.h5")
+intents = json.loads(open("chatbot/intents.json").read())
 print(intents)
-words = pickle.load(open("chatbot\words.pkl", "rb"))
-classes = pickle.load(open("chatbot\classes.pkl", "rb"))
+words = pickle.load(open("chatbot/words.pkl", "rb"))
+classes = pickle.load(open("chatbot/classes.pkl", "rb"))
 
 @app.route("/get", methods=["POST"])
 def chatbot_response():
