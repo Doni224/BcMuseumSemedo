@@ -551,7 +551,7 @@ print(intents)
 words = pickle.load(open("chatbot/words.pkl", "rb"))
 classes = pickle.load(open("chatbot/classes.pkl", "rb"))
 
-@app.route("/get", methods=["POST"])
+@app.route("https://virtualasistensemedo.onrender.com/get", methods=["POST"])
 def chatbot_response():
     msg = request.form["msg"]
     print(msg)
