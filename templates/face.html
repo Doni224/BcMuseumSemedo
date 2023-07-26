@@ -271,7 +271,7 @@
           msg: rawText,
         },
         type: "POST",
-        url: "/get",
+        url: "https://backendvasemodo.onrender.com/get",
       }).done(function (data) {
         var botHtml = '<p class="botText"><span>' + data + "</span></p>";
         $("#msg-bubble").append($.parseHTML(botHtml));
